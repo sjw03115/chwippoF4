@@ -16,7 +16,7 @@
 
 .image {
   position: static;
-  display: inline-block;
+  display: block;
   width: 1350px;
   max-width: none;
   background-color: #ece5db;
@@ -1612,7 +1612,7 @@
   display: flex;
   width: 120%;
   height: 80px;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-bottom: auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1622,8 +1622,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #f2a0ca;
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, #f2a0ca, #3c3536);
+  background-color: #ece5db;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
@@ -2090,7 +2089,13 @@
 
 @media screen and (min-width: 1920px) {
   .image {
+    display: block;
     width: 1920px;
+    float: none;
+    clear: none;
+    text-align: center;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
   .body {
     background-color: #3c3536;
@@ -2743,6 +2748,16 @@
   }
   .container-10 {
     display: inline-block;
+  }
+  .section-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
